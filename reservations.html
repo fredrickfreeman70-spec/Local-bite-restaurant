@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Local Bite - Sierra Leonean home cooking in Freetown.">
+<title>Reserve a Table | Local Bite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap bar">
+<a class="logo" href="index.html">Local<span>Bite</span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav aria-label="Main"><ul id="menu"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reservations.html" aria-current="page">Reserve</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<div class="page-head"><div class="wrap"><h1>Reserve a Table</h1></div></div>
+<main id="main">
+<section><div class="wrap"><div id="msg" class="msg" role="status"></div>
+<form data-msg="Thank you {name}! Your table request has been received. We will confirm by phone." aria-label="Reservation form">
+<div><label for="name">Full name</label><input id="name" name="name" required></div>
+<div><label for="phone">Phone</label><input id="phone" type="tel" required></div>
+<div><label for="date">Date</label><input id="date" type="date" required></div>
+<div><label for="time">Time</label><input id="time" type="time" min="11:00" max="21:00" required></div>
+<div><label for="guests">Guests</label><select id="guests"><option>1</option><option>2</option><option>3-4</option><option>5-8</option></select></div>
+<button class="btn" type="submit">Book table</button></form></div></section>
+</main>
+<footer><div class="wrap">
+<div class="foot">
+<div><h3>Local Bite</h3><p>Sierra Leonean home cooking, made fresh every day.</p></div>
+<div><h3>Visit</h3><p>12 Wilkinson Road<br>Freetown, Sierra Leone<br>Open daily 11:00 - 22:00</p></div>
+<div><h3>Contact</h3><p><a href="tel:+23276000000">+232 76 000 000</a><br><a href="mailto:hello@localbite.sl">hello@localbite.sl</a></p></div>
+</div>
+<p class="copy">&copy; 2026 Local Bite. Student project, DCOMP 204 Web Design, Limkokwing University Sierra Leone.</p>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
